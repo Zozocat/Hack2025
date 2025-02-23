@@ -624,6 +624,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Background
       objectReference: {fileID: 0}
+    - target: {fileID: 4101907394284826260, guid: 46f77e15fcc431c48ae4fb6ca8d05cb1, type: 3}
+      propertyPath: m_VideoClip
+      value: 
+      objectReference: {fileID: 32900000, guid: 30d2f6197d2810d47986644ed017498e, type: 3}
     - target: {fileID: 7066370657637974700, guid: 46f77e15fcc431c48ae4fb6ca8d05cb1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
