@@ -325,12 +325,14 @@ MonoBehaviour:
   buttonContainer: {fileID: 517124675}
   buttonPrefab: {fileID: 2409405549484396253, guid: 9ef0daa5691cd7348ad7c9e131703f89, type: 3}
   questions:
-  - questionText: You stand at the brink of human achievement; all it took was for
-      the planet to be polluted by those who wanted to make a quick buck and a few
-      white lies on your resume. You are the captain of the UES Lady Beatrice you
-      are responsible for all souls on board. As you blast off into the polluted
-      skies of earth, the smog is almost too thick to see through. You look below
-      at the hellscape that was once your home and feel...
+  - questionText: 'Distance Remaining: 4.37 ly
+
+      You stand at the brink of human
+      achievement; all it took was for the planet to be polluted by those who wanted
+      to make a quick buck and a few white lies on your resume. You are the captain
+      of the UES Lady Beatrice you are responsible for all souls on board. As you
+      blast off into the polluted skies of earth, the smog is almost too thick to
+      see through. You look below at the hellscape that was once your home and feel...'
     choices:
     - Regret
     - Joy
@@ -339,37 +341,42 @@ MonoBehaviour:
     sprite1: {fileID: 21300000, guid: 663aacf703f4df14da61cb03b81fb611, type: 3}
     sprite2: {fileID: 0}
     sprite3: {fileID: 0}
-  - questionText: "You feel regret that you could not have done more for earth, you
-      could have done more you\u2019re sure but what effect that would have had\u2026
-      you\u2019re not so sure.\r"
+  - questionText: "Distance Remaining: 4.37 ly\nYou feel regret that you could not
+      have done more for earth, you could have done more you\u2019re sure but what
+      effect that would have had\u2026 you\u2019re not so sure.\r"
     choices:
     - Continue...
     nextQuestionIndices: 04000000
     sprite1: {fileID: 21300000, guid: 663aacf703f4df14da61cb03b81fb611, type: 3}
     sprite2: {fileID: 0}
     sprite3: {fileID: 0}
-  - questionText: "You\u2019re glad to be off that damn planet. Your lungs are already
-      thanking you and you\u2019re looking forward to a fresh start in the light
-      of a distant star."
+  - questionText: "Distance Remaining: 4.37 ly\nYou\u2019re glad to be off that damn
+      planet. Your lungs are already thanking you and you\u2019re looking forward
+      to a fresh start in the light of a distant star."
     choices:
     - Continue...
     nextQuestionIndices: 04000000
     sprite1: {fileID: 21300000, guid: 663aacf703f4df14da61cb03b81fb611, type: 3}
     sprite2: {fileID: 0}
     sprite3: {fileID: 0}
-  - questionText: You are determined to make this second chance that humanity has
-      been given the greatest shot at success, who makes it to the end is up to them.
+  - questionText: 'Distance Remaining: 4.37 ly
+
+      You are determined to make
+      this second chance that humanity has been given the greatest shot at success,
+      who makes it to the end is up to them.'
     choices:
     - Continue...
     nextQuestionIndices: 04000000
     sprite1: {fileID: 21300000, guid: 663aacf703f4df14da61cb03b81fb611, type: 3}
     sprite2: {fileID: 0}
     sprite3: {fileID: 0}
-  - questionText: As you leave the earth's atmosphere you are peppered with debris
-      from old spacecraft and rubbish that was launched into space to be forgotten
-      about. These forgotten fragments of spacecraft soon make themselves very fresh
-      in the minds of everyone aboard the UES Lady Beatrice as a big chunk scrapes
-      its way through the outer hull.
+  - questionText: 'Distance Remaining: 4.37 ly
+
+      As you leave the earth''s atmosphere
+      you are peppered with debris from old spacecraft and rubbish that was launched
+      into space to be forgotten about. These forgotten fragments of spacecraft soon
+      make themselves very fresh in the minds of everyone aboard the UES Lady Beatrice
+      as a big chunk scrapes its way through the outer hull.'
     choices:
     - Send the engineers out immediately.
     - 'Try and weather the storm and send the engineers out afterwards '
@@ -379,35 +386,41 @@ MonoBehaviour:
     sprite1: {fileID: 21300000, guid: 94dfb945b71190845b2982ecbf57e247, type: 3}
     sprite2: {fileID: 0}
     sprite3: {fileID: 0}
-  - questionText: The engineers manage to repair the damage to the outer hull but
-      many have been struck by debris costing them their lives.
+  - questionText: 'Distance Remaining: 4.37 ly
+
+      The engineers manage to repair
+      the damage to the outer hull but many have been struck by debris costing them
+      their lives.'
     choices:
     - Continue...
     nextQuestionIndices: 08000000
     sprite1: {fileID: 21300000, guid: 94dfb945b71190845b2982ecbf57e247, type: 3}
     sprite2: {fileID: 0}
     sprite3: {fileID: 0}
-  - questionText: "The UES Lady Beatrice escapes the debris with no additional wounds
-      on her hull. The engineers appear grateful that they have a safer work environment
-      than what may have been.\r"
+  - questionText: "Distance Remaining: 4.37 ly\nThe UES Lady Beatrice escapes the
+      debris with no additional wounds on her hull. The engineers appear grateful
+      that they have a safer work environment than what may have been.\r"
     choices:
     - Continue...
     nextQuestionIndices: 08000000
     sprite1: {fileID: 21300000, guid: 94dfb945b71190845b2982ecbf57e247, type: 3}
     sprite2: {fileID: 0}
     sprite3: {fileID: 0}
-  - questionText: The UES Lady Beatrice escapes the debris with no additional wounds
-      on her hull. Everything seems normal, for now.
+  - questionText: 'Distance Remaining: 4.37 ly
+
+      The UES Lady Beatrice escapes
+      the debris with no additional wounds on her hull. Everything seems normal,
+      for now.'
     choices:
     - Continue...
     nextQuestionIndices: 08000000
     sprite1: {fileID: 21300000, guid: 94dfb945b71190845b2982ecbf57e247, type: 3}
     sprite2: {fileID: 0}
     sprite3: {fileID: 0}
-  - questionText: "There have been reports of people getting sick within the UES
-      Lady Beatrice, some appear more susceptible than others. The passengers are
-      adamant that it is nothing serious and just a cold. Medical staff aren\u2019t
-      so sure.\r"
+  - questionText: "Distance Remaining: 2.91 ly\nThere have been reports of people
+      getting sick within the UES Lady Beatrice, some appear more susceptible than
+      others. The passengers are adamant that it is nothing serious and just a cold.
+      Medical staff aren\u2019t so sure.\r"
     choices:
     - Let them go about as normal, no need to waste resources on the common cold.
     - "Have medical staff look after the sick and ensure it doesn\u2019t get worse."
@@ -416,38 +429,47 @@ MonoBehaviour:
     sprite1: {fileID: 21300000, guid: 0e0c3d3fba3011f47ba6cbda08095caf, type: 3}
     sprite2: {fileID: 0}
     sprite3: {fileID: 0}
-  - questionText: "The sickness that appeared at first to be harmless at first grows
-      into a hellish plague. With nowhere being truly safe inside the UES Lady Beatrice
-      to keep safe from the illness it eventually consumes every living thing within
-      the ship. You have not made it to Alpha Centauri.\r"
+  - questionText: "Distance Remaining: 2.91 ly\nThe sickness that appeared at first
+      to be harmless at first grows into a hellish plague. With nowhere being truly
+      safe inside the UES Lady Beatrice to keep safe from the illness it eventually
+      consumes every living thing within the ship. You have not made it to Alpha
+      Centauri.\r"
     choices:
     - Continue...
     nextQuestionIndices: ffffffff
     sprite1: {fileID: 21300000, guid: 0e0c3d3fba3011f47ba6cbda08095caf, type: 3}
     sprite2: {fileID: 0}
     sprite3: {fileID: 0}
-  - questionText: Although the sickness mutated and became more lethal and contagious,
-      under the watchful eye of the medical staff the sickness was contained eventually.
-      There were still several deaths during this pandemic, this may restrict you
-      colonisation efforts.
+  - questionText: 'Distance Remaining: 2.91 ly
+
+      Although the sickness mutated
+      and became more lethal and contagious, under the watchful eye of the medical
+      staff the sickness was contained eventually. There were still several deaths
+      during this pandemic, this may restrict you colonisation efforts.'
     choices:
     - Continue...
     nextQuestionIndices: 0c000000
     sprite1: {fileID: 21300000, guid: 0e0c3d3fba3011f47ba6cbda08095caf, type: 3}
     sprite2: {fileID: 0}
     sprite3: {fileID: 0}
-  - questionText: By quarantining the sick immediately the illness was stopped with
-      the first of the infected. It appears that the sickness mutated while quarantine
-      was in place. The outcome would have been alot worse if it was allowed to spread.
+  - questionText: 'Distance Remaining: 2.91 ly
+
+      By quarantining the sick immediately
+      the illness was stopped with the first of the infected. It appears that the
+      sickness mutated while quarantine was in place. The outcome would have been
+      alot worse if it was allowed to spread.'
     choices:
     - Continue...
     nextQuestionIndices: 0c000000
     sprite1: {fileID: 21300000, guid: 0e0c3d3fba3011f47ba6cbda08095caf, type: 3}
     sprite2: {fileID: 0}
     sprite3: {fileID: 0}
-  - questionText: The UES Lady Beatrice has been struck by a solar flare taking out
-      your main power. Backup power is online and will last a few days. During a
-      routine scan it was revealed that a planet nearby could be a safe landing spot.
+  - questionText: 'Distance Remaining: 1.46 ly
+
+      The UES Lady Beatrice has been
+      struck by a solar flare taking out your main power. Backup power is online
+      and will last a few days. During a routine scan it was revealed that a planet
+      nearby could be a safe landing spot.'
     choices:
     - Steer towards the planet.
     - Try to repair the generator.
@@ -455,18 +477,24 @@ MonoBehaviour:
     sprite1: {fileID: 21300000, guid: fd360986ce4405e47b199cd2d9d79df4, type: 3}
     sprite2: {fileID: 0}
     sprite3: {fileID: 0}
-  - questionText: You land the UES Lady Beatrice on the planet's surface and start
-      repairs. You realise that there is not enough fuel left in the UES Lady Beatrice
-      to escape orbit again. A signal to earth will take over a year to reach them
-      and even longer for earth to send help. You are stranded.
+  - questionText: 'Distance Remaining: 1.46 ly
+
+      You land the UES Lady Beatrice
+      on the planet''s surface and start repairs. You realise that there is not enough
+      fuel left in the UES Lady Beatrice to escape orbit again. A signal to earth
+      will take over a year to reach them and even longer for earth to send help.
+      You are stranded.'
     choices:
     - Continue...
     nextQuestionIndices: ffffffff
     sprite1: {fileID: 21300000, guid: fd360986ce4405e47b199cd2d9d79df4, type: 3}
     sprite2: {fileID: 0}
     sprite3: {fileID: 0}
-  - questionText: 'Cutting it close, the engineers manage to ge the main power systems
-      back online only a few hours before complete loss of power. '
+  - questionText: 'Distance Remaining: 1.46 ly
+
+      Cutting it close, the engineers
+      manage to ge the main power systems back online only a few hours before complete
+      loss of power. '
     choices:
     - Continue...
     nextQuestionIndices: 0f000000
