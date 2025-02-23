@@ -7,12 +7,15 @@ using TMPro;
 public class DialogueManager : MonoBehaviour
 {
     [Header("UI References")]
-    public TextMeshProUGUI questionText; // Assign your QuestionText object here
-    public Transform buttonContainer;    // Assign your ButtonContainer (with Vertical Layout Group)
-    public GameObject buttonPrefab;      // Assign your ChoiceButton prefab
+    public TextMeshProUGUI questionText;    // The text object that displays the question
+    public Image questionImage1;            // First image for the sprite
+    public Image questionImage2;            // Second image for the sprite
+    public Image questionImage3;            // Third image for the sprite
+    public Transform buttonContainer;       // Parent container with a Vertical Layout Group for buttons
+    public GameObject buttonPrefab;         // Button prefab for choices
 
     [Header("Dialogue Data")]
-    public Question[] questions;         // Array of questions to set up in the Inspector
+    public Question[] questions;            // Array of questions set up in the Inspector
 
     private int currentQuestionIndex = 0;
 
@@ -22,7 +25,7 @@ public class DialogueManager : MonoBehaviour
         DisplayQuestion(currentQuestionIndex);
     }
 
-    // Clears any existing buttons and displays the question at index 'index'
+    // Displays the question at the given index and instantiates the corresponding choice buttons.
     void DisplayQuestion(int index)
     {
         // Clear previous buttons
@@ -31,42 +34,67 @@ public class DialogueManager : MonoBehaviour
             Destroy(child.gameObject);
         }
 
-        // Safety check for valid index
+        // Safety check for a valid index
         if (index < 0 || index >= questions.Length)
         {
             questionText.text = "End of Dialogue!";
+            if (questionImage1 != null) questionImage1.enabled = false;
+            if (questionImage2 != null) questionImage2.enabled = false;
+            if (questionImage3 != null) questionImage3.enabled = false;
             return;
         }
 
         Question q = questions[index];
         questionText.text = q.questionText;
 
-        // Create a button for each choice
+        // Update the images based on the question's sprites.
+        UpdateImage(questionImage1, q.sprite1);
+        UpdateImage(questionImage2, q.sprite2);
+        UpdateImage(questionImage3, q.sprite3);
+
+        // Create a button for each choice.
         for (int i = 0; i < q.choices.Count; i++)
         {
             GameObject buttonObj = Instantiate(buttonPrefab, buttonContainer);
-            // Set the text for the button
-            TextMeshProUGUI btnText = buttonObj.GetComponentInChildren<TextMeshProUGUI>();
-            if (btnText != null)
+
+            // Set the text for the button (supporting TextMeshProUGUI or legacy Text)
+            TextMeshProUGUI btnTMP = buttonObj.GetComponentInChildren<TextMeshProUGUI>();
+            if (btnTMP != null)
             {
-                btnText.text = q.choices[i];
+                btnTMP.text = q.choices[i];
             }
             else
             {
-                // Fallback for legacy UI Text component
-                Text legacyText = buttonObj.GetComponentInChildren<Text>();
-                if (legacyText != null)
+                Text btnText = buttonObj.GetComponentInChildren<Text>();
+                if (btnText != null)
                 {
-                    legacyText.text = q.choices[i];
+                    btnText.text = q.choices[i];
                 }
             }
 
-            int choiceIndex = i; // capture current value for the listener
+            int choiceIndex = i; // Capture the index for the listener.
             buttonObj.GetComponent<Button>().onClick.AddListener(() => OnChoiceSelected(q.nextQuestionIndices[choiceIndex]));
         }
     }
 
-    // This method is called when a choice button is clicked.
+    // Helper method to update an Image component based on the provided sprite.
+    void UpdateImage(Image img, Sprite sprite)
+    {
+        if (img != null)
+        {
+            if (sprite != null)
+            {
+                img.enabled = true;
+                img.sprite = sprite;
+            }
+            else
+            {
+                img.enabled = false;
+            }
+        }
+    }
+
+    // Called when a choice button is clicked.
     public void OnChoiceSelected(int nextQuestionIndex)
     {
         currentQuestionIndex = nextQuestionIndex;
