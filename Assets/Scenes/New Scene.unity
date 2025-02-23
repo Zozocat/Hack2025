@@ -414,7 +414,7 @@ MonoBehaviour:
     - Quarantine the sick to ensure no further spread.
     nextQuestionIndices: 090000000a0000000b000000
     sprite1: {fileID: 21300000, guid: 0e0c3d3fba3011f47ba6cbda08095caf, type: 3}
-    sprite2: {fileID: 21300000, guid: fd360986ce4405e47b199cd2d9d79df4, type: 3}
+    sprite2: {fileID: 0}
     sprite3: {fileID: 0}
   - questionText: "The sickness that appeared at first to be harmless at first grows
       into a hellish plague. With nowhere being truly safe inside the UES Lady Beatrice
@@ -424,7 +424,7 @@ MonoBehaviour:
     - Continue...
     nextQuestionIndices: ffffffff
     sprite1: {fileID: 21300000, guid: 0e0c3d3fba3011f47ba6cbda08095caf, type: 3}
-    sprite2: {fileID: 21300000, guid: fd360986ce4405e47b199cd2d9d79df4, type: 3}
+    sprite2: {fileID: 0}
     sprite3: {fileID: 0}
   - questionText: Although the sickness mutated and became more lethal and contagious,
       under the watchful eye of the medical staff the sickness was contained eventually.
@@ -434,7 +434,7 @@ MonoBehaviour:
     - Continue...
     nextQuestionIndices: 0c000000
     sprite1: {fileID: 21300000, guid: 0e0c3d3fba3011f47ba6cbda08095caf, type: 3}
-    sprite2: {fileID: 21300000, guid: fd360986ce4405e47b199cd2d9d79df4, type: 3}
+    sprite2: {fileID: 0}
     sprite3: {fileID: 0}
   - questionText: By quarantining the sick immediately the illness was stopped with
       the first of the infected. It appears that the sickness mutated while quarantine
@@ -443,13 +443,40 @@ MonoBehaviour:
     - Continue...
     nextQuestionIndices: 0c000000
     sprite1: {fileID: 21300000, guid: 0e0c3d3fba3011f47ba6cbda08095caf, type: 3}
-    sprite2: {fileID: 21300000, guid: fd360986ce4405e47b199cd2d9d79df4, type: 3}
+    sprite2: {fileID: 0}
+    sprite3: {fileID: 0}
+  - questionText: The UES Lady Beatrice has been struck by a solar flare taking out
+      your main power. Backup power is online and will last a few days. During a
+      routine scan it was revealed that a planet nearby could be a safe landing spot.
+    choices:
+    - Steer towards the planet.
+    - Try to repair the generator.
+    nextQuestionIndices: 0d0000000e000000
+    sprite1: {fileID: 21300000, guid: fd360986ce4405e47b199cd2d9d79df4, type: 3}
+    sprite2: {fileID: 0}
+    sprite3: {fileID: 0}
+  - questionText: You land the UES Lady Beatrice on the planet's surface and start
+      repairs. You realise that there is not enough fuel left in the UES Lady Beatrice
+      to escape orbit again. A signal to earth will take over a year to reach them
+      and even longer for earth to send help. You are stranded.
+    choices:
+    - Continue...
+    nextQuestionIndices: ffffffff
+    sprite1: {fileID: 21300000, guid: fd360986ce4405e47b199cd2d9d79df4, type: 3}
+    sprite2: {fileID: 0}
+    sprite3: {fileID: 0}
+  - questionText: 'Cutting it close, the engineers manage to ge the main power systems
+      back online only a few hours before complete loss of power. '
+    choices:
+    - Continue...
+    nextQuestionIndices: 0f000000
+    sprite1: {fileID: 21300000, guid: fd360986ce4405e47b199cd2d9d79df4, type: 3}
+    sprite2: {fileID: 0}
     sprite3: {fileID: 0}
   - questionText: You have made it to Alpha Centauri. The planet can now be successfully
       colonised.
-    choices:
-    - Continue...
-    nextQuestionIndices: 0c000000
+    choices: []
+    nextQuestionIndices: 
     sprite1: {fileID: 21300000, guid: 3186f7d945b4e054ea876a55db1b31b3, type: 3}
     sprite2: {fileID: 0}
     sprite3: {fileID: 0}
@@ -762,7 +789,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colonyNum: {fileID: 870401695}
-  colony: 0
   colonyAlive: 100
 --- !u!1 &661105396
 GameObject:

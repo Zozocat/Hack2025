@@ -37,7 +37,7 @@ public class DialogueManager : MonoBehaviour
         // Safety check for a valid index
         if (index < 0 || index >= questions.Length)
         {
-            questionText.text = "You died.";
+            questionText.text = "You failed Earth and didn't reach Alpha Centauri.";
             if (questionImage1 != null) questionImage1.enabled = false;
             if (questionImage2 != null) questionImage2.enabled = false;
             if (questionImage3 != null) questionImage3.enabled = false;
