@@ -14,6 +14,7 @@ public class DialogueManager : MonoBehaviour
     public Transform buttonContainer;       // Parent container with a Vertical Layout Group for buttons
     public GameObject buttonPrefab;         // Button prefab for choices
 
+
     [Header("Dialogue Data")]
     public Question[] questions;            // Array of questions set up in the Inspector
 
